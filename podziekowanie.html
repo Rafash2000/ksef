@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dziękuję za kontakt | KSeF 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F172A',
+                        greenpro: '#16A34A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-navy text-white flex items-center justify-center min-h-screen">
+
+<main class="max-w-xl px-6 text-center">
+    <div class="bg-white text-slate-800 rounded-2xl shadow-xl p-10">
+
+        <div class="text-greenpro text-5xl mb-4">✔</div>
+
+        <h1 class="text-3xl font-bold mb-4">
+            Dziękuję za kontakt!
+        </h1>
+
+        <p class="text-lg text-slate-600 mb-6">
+            Twoje zgłoszenie dotyczące <strong>KSeF 2.0</strong> zostało poprawnie wysłane.
+            Odpowiem możliwie szybko — zazwyczaj tego samego dnia roboczego.
+        </p>
+
+        <div class="bg-slate-50 border rounded-lg p-4 text-left text-sm text-slate-700 mb-6">
+            <p class="font-semibold mb-2">Co dalej?</p>
+            <ul class="list-disc list-inside space-y-1">
+                <li>Przeanalizuję Twoją sytuację techniczną</li>
+                <li>Sprawdzę możliwe problemy (API, XML FA(3), tokeny)</li>
+                <li>Skontaktuję się z propozycją dalszych kroków</li>
+            </ul>
+        </div>
+
+        <!-- LICZNIK -->
+        <p class="text-sm text-slate-500 mb-6">
+            Za <span id="countdown" class="font-semibold text-navy">10</span> sekund
+            nastąpi automatyczny powrót na stronę główną.
+        </p>
+
+        <!-- POWRÓT RĘCZNY -->
+        <a href="http://192.168.1.113/index.html"
+           class="inline-flex items-center justify-center px-6 py-3 rounded-md
+                  bg-greenpro text-white font-semibold
+                  hover:bg-green-700 transition">
+            ← Wróć do strony głównej teraz
+        </a>
+
+    </div>
+</main>
+
+<script>
+    let seconds = 10;
+    const countdownEl = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+        seconds--;
+        countdownEl.textContent = seconds;
+
+        if (seconds <= 0) {
+            clearInterval(interval);
+            window.location.href = "http://192.168.1.113/index.html";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>

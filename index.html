@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSeF 2.0 – Wdrożenia IT w 48h | Integracje API</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F172A',
+                        greenpro: '#16A34A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- HERO -->
+<section class="bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                Wdrożenie <span class="text-greenpro">KSeF 2.0</span><br>
+                w Twojej firmie nawet w 48h
+            </h1>
+            <p class="mt-6 text-lg text-slate-300">
+                Skupiam się na technicznej stronie KSeF: konfiguracja API, generowanie tokenów, 
+                aktualizacja serwerów SQL i udrażnianie komunikacji systemowej. 
+                Dostarczam gotowe połączenie – bez zbędnego doradztwa i szkoleń.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                <a href="#kontakt" data-scroll
+                    class="inline-flex justify-center items-center px-6 py-4 rounded-md bg-greenpro text-white font-semibold hover:bg-green-700 transition">
+                    Zamów audyt gotowości
+                </a>
+
+                <a href="#oferta" data-scroll
+                    class="inline-flex justify-center items-center px-6 py-4 rounded-md border border-slate-400 text-white hover:bg-white hover:text-navy transition">
+                    Zobacz ofertę
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Image Placeholder -->
+        <div class="relative w-full h-80 md:h-[420px] rounded-xl overflow-hidden shadow-lg">
+            <picture>
+                <source srcset="/images/hero-ksef.webp" type="image/webp">
+                <img
+                    src="/images/hero-ksef.jpg"
+                    alt="Wdrożenie KSeF 2.0 – integracje systemów i API"
+                    loading="lazy"
+                    decoding="async"
+                    class="w-full h-full object-cover"
+                />
+            </picture>
+        </div>
+        
+    </div>
+</section>
+
+<!-- PROBLEMY / SOCIAL PROOF -->
+<section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-10">Dlaczego firmy trafiają właśnie do mnie?</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 border rounded-lg">
+                <p class="text-xl font-semibold text-navy">❌ Błąd 422?</p>
+                <p class="mt-3 text-slate-600">
+                    Źle wygenerowany XML FA(3), niepoprawna walidacja albo problem z API KSeF.
+                </p>
+            </div>
+
+            <div class="p-6 border rounded-lg">
+                <p class="text-xl font-semibold text-navy">❌ System nie wysyła faktur?</p>
+                <p class="mt-3 text-slate-600">
+                    Subiekt, Optima, system medyczny – integracja istnieje tylko „na papierze”.
+                </p>
+            </div>
+
+            <div class="p-6 border rounded-lg">
+                <p class="text-xl font-semibold text-navy">❌ Księgowa rozkłada ręce?</p>
+                <p class="mt-3 text-slate-600">
+                    Bo to nie problem księgowy – tylko czysto techniczny.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta" class="bg-slate-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Dopasowana oferta – bez korporacyjnego bełkotu</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow">
+                <h3 class="text-2xl font-bold text-navy mb-4">
+                    Systemy ERP i Desktop
+                </h3>
+                <p class="text-slate-600 mb-4">Dla firm korzystających z rozwiązań stacjonarnych.</p>
+                <ul class="space-y-3 text-slate-700">
+                    <li>✔ Pełna konfiguracja <b>Subiekt GT / Nexo</b></li>
+                    <li>✔ Wdrożenia dla <b>Comarch ERP Optima</b></li>
+                    <li>✔ Aktualizacja serwerów SQL i protokołów TLS</li>
+                    <li>✔ Testy połączenia na środowisku produkcyjnym</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow">
+                <h3 class="text-2xl font-bold text-navy mb-4">
+                    SaaS i Systemy Chmurowe
+                </h3>
+                <p class="text-slate-600 mb-4">Szybkie wdrożenia dla nowoczesnych biznesów.</p>
+                <ul class="space-y-3 text-slate-700">
+                    <li>✔ Integracja <b>inFakt, Fakturownia, wFirma</b></li>
+                    <li>✔ Konfiguracja KSeF w <b>BaseLinker</b> (E-commerce)</li>
+                    <li>✔ Bezpieczne generowanie tokenów API</li>
+                    <li>✔ Ekspresowe wdrożenie zdalne w 24h</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Jak wygląda wdrożenie KSeF 2.0?</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="text-greenpro text-4xl font-bold">1</div>
+                <h4 class="mt-4 font-semibold text-xl">Audyt techniczny</h4>
+                <p class="mt-2 text-slate-600">
+                    Sprawdzam system, API, gotowość na XML FA(3).
+                </p>
+            </div>
+
+            <div>
+                <div class="text-greenpro text-4xl font-bold">2</div>
+                <h4 class="mt-4 font-semibold text-xl">Konfiguracja i tokeny</h4>
+                <p class="mt-2 text-slate-600">
+                    Generuję tokeny API, konfiguruję komunikację z KSeF.
+                </p>
+            </div>
+
+            <div>
+                <div class="text-greenpro text-4xl font-bold">3</div>
+                <h4 class="mt-4 font-semibold text-xl">Walidacja i Uruchomienie</h4>
+                <p class="mt-2 text-slate-600">
+                    Przeprowadzamy finalną weryfikację komunikacji z bramką MF. 
+                    Potwierdzam poprawne uwierzytelnienie API, sprawdzam statusy synchronizacji 
+                    i przekazuję techniczną kartę wdrożenia.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CENNIK -->
+<section class="bg-slate-50 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Prosty cennik – bez gwiazdek</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow text-center">
+                <h3 class="font-bold text-xl mb-2">Konsultacja</h3>
+                <p class="text-slate-600 mb-4">Audyt + rekomendacje</p>
+                <p class="text-3xl font-bold">od 300 zł</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow text-center border-2 border-greenpro">
+                <h3 class="font-bold text-xl mb-2">Wdrożenie</h3>
+                <p class="text-slate-600 mb-4">Pełna konfiguracja KSeF</p>
+                <p class="text-3xl font-bold">od 1500 zł</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow text-center">
+                <h3 class="font-bold text-xl mb-2">Opieka miesięczna</h3>
+                <p class="text-slate-600 mb-4">Support i aktualizacje</p>
+                <p class="text-3xl font-bold">od 200 zł</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- O MNIE -->
+<section class="py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6">Kim jestem?</h2>
+        <p class="text-slate-700 text-lg">
+            Jestem specjalistą IT, nie księgowym. Moim zadaniem jest sprawić, aby Twoje oprogramowanie 
+            <b>skutecznie rozmawiało z serwerami rządowymi</b>. Konfiguruję bezpieczne tokeny, 
+            sprawdzam certyfikaty i udrażniam wysyłkę. Zapewniam czyste, techniczne wdrożenie, 
+            pozwalając Tobie i Twojej księgowej zająć się resztą.
+        </p>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="bg-navy text-white py-20">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">Zapytaj o wdrożenie techniczne</h2>
+
+        
+        <form id="contact-form" class="grid gap-6">
+            <input type="text" name="fi-sender-fullName" placeholder="Imię" class="p-4 rounded text-slate-800" />
+            <input type="email" name="fi-sender-email" placeholder="Email" required class="p-4 rounded text-slate-800" />
+            <input type="text" name="fi-text-telefon" placeholder="Telefon" class="p-4 rounded text-slate-800" />
+            <input type="text" name="fi-text-branza" placeholder="Branża" class="p-4 rounded text-slate-800" />
+            <textarea name="fi-text-wiadomosc" placeholder="Krótko opisz problem" rows="4" class="p-4 rounded text-slate-800"></textarea>
+
+            <button type="submit" class="bg-greenpro py-4 rounded font-semibold hover:bg-green-700 transition">
+                Wyślij prośbę o wycenę
+            </button>
+        </form>
+
+        <p class="text-center mt-6">
+            lub napisz bezpośrednio na
+            <a 
+  href="https://wa.me/48123456789?text=Cześć,%20chcę%20porozmawiać%20o%20wdrożeniu%20KSeF%202.0"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="underline text-greenpro font-semibold hover:text-green-700 transition"
+>
+    WhatsApp
+</a>
+
+        </p>
+    </div>
+</section>
+
+<!-- Forminit SDK + JS -->
+<script src="https://forminit.com/sdk/v1/forminit.js"></script>
+<script>
+  const form = document.getElementById("contact-form");
+  const forminit = new Forminit();
+  const FORM_ID = "ln5ne67fdbg"; // Twój Form ID
+  const redirectUrl = "http://192.168.1.113/podziekowanie.html"
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const { error } = await forminit.submit(FORM_ID, formData);
+
+    if (error) {
+      alert("Wystąpił błąd: " + error.message);
+      return;
+    }
+
+    window.location.href = redirectUrl;
+  });
+</script>
+
+<script>
+    document.querySelectorAll('a[data-scroll]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const target = document.querySelector(targetId);
+  
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+</script>
+  
+
+<footer class="py-6 text-center text-slate-500 text-sm">
+    <p>© 2026 – <strong>Rafał Baryłka Digital ERP</strong></p>
+    <p>Konfiguracja Techniczna KSeF 2.0 | IT & Mosty API | Gdańsk</p>
+</footer>
+
+</body>
+</html>
